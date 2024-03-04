@@ -1,0 +1,43 @@
+{
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_title": "EvaluationKIT Removal Tool"
+  },
+  "author": {
+    "email": "chuck.terry@outlook.com"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "index.js"
+      ],
+      "matches": [
+        "https://*.edu/my/"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "description": "EvaluationKIT Removal Tool - When you're unable to hide your course evaluation popup in Moodle, this extension has you covered!",
+  "homepage_url": "https://github.com/ChuckTerry",
+  "host_permissions": [
+    "https://*.edu/my/"
+  ],
+  "icons": {
+    "128": "images/icon128.png",
+    "64": "images/icon64.png",
+    "48": "images/icon48.png",
+    "32": "images/icon32.png",
+    "16": "images/icon16.png"
+  },
+  "manifest_version": 3,
+  "name": "EvaluationKIT Removal Tool",
+  "options_ui": {
+    "browser_style": true,
+    "page": "options/index.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "version": "1.0.0",
+  "version_name": "1.0.0"
+}
